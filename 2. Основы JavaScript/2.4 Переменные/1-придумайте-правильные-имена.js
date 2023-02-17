@@ -1,0 +1,2 @@
+const ourPlanetName
+const currentUserName
