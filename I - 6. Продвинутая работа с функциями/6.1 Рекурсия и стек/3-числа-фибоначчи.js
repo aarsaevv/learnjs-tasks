@@ -1,3 +1,5 @@
+'use strict'
+
 // Рекурсивный подход
 
 function fib(n) {

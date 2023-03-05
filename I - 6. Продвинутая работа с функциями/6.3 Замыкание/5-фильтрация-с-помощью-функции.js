@@ -1,3 +1,5 @@
+'use strict'
+
 const inBetween = (a, b) => {
 	return (x) => {
 		return (x >= a && x <= b)

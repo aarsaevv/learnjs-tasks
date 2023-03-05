@@ -1,3 +1,5 @@
+'use strict'
+
 let list = {
   value: 1,
   next: {

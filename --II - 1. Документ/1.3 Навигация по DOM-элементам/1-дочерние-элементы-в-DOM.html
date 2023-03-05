@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <div>Пользователи:</div>
+  <ul>
+    <li>Джон</li>
+    <li>Пит</li>
+  </ul>
+</body>
+<script type="text/javascript">
+  console.log(document.body.firstElementChild)
+  console.log(document.body.firstElementChild.nextElementSibling)
+  console.log(document.body.firstElementChild.nextElementSibling.lastElementChild)
+  // Или вот так
+  console.log(document.body.children[0])
+  console.log(document.body.children[1])
+  console.log(document.body.children[1].children[1])
+
+</script>
+</html>

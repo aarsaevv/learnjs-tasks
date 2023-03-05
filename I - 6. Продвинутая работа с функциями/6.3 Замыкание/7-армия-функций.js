@@ -1,3 +1,5 @@
+'use strict'
+
 function makeArmy() {
   let shooters = []
   // В старом решении значение i бралось из внешнего лексического окружения,
