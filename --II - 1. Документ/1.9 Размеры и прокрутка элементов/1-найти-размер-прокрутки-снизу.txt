@@ -1,0 +1,1 @@
+scrollBottom = scrollHeight(высота всего документа) - clientHeight(видимая часть высоты) - scrollTop(часть уже промотанная снизу вверх)
