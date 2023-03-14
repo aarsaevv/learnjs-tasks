@@ -1,8 +1,3 @@
-Это задание является немного усложнённым вариантом одного из предыдущих – Исправьте функцию, теряющую "this".
-Объект user был изменён. Теперь вместо двух функций loginOk/loginFail у него есть только одна – user.login(true/false).
-Что нужно передать в вызов функции askPassword в коде ниже, чтобы она могла вызывать функцию
-user.login(true) как ok и функцию user.login(false) как fail?
-
 'use strict'
 
 function askPassword(ok, fail) {

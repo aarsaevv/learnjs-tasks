@@ -3,12 +3,6 @@
 
 <head>
   <meta charset="utf-8">
-  <link rel="stylesheet" href="index.css">
-  <script>
-    document.onclick = function(e) { // показывает координаты точки клика
-      coords.innerHTML = e.clientX + ':' + e.clientY;
-    };
-  </script>
 </head>
 
 <body>
@@ -32,6 +26,22 @@
 
 
   <script>
+
+    document.addEventListener('click', (e) => {
+      coords.innerHTML = e.clientX + ':' + e.clientY;
+    })
+
+    let windowCoordinates = field.getBoundingClientRect()
+
+    // Флаг №1
+    console.log(windowCoordinates.left, windowCoordinates.top)
+    // Флаг №2
+    console.log(windowCoordinates.right, windowCoordinates.bottom)
+    // Флаг №3
+    console.log(windowCoordinates.left + field.clientLeft, windowCoordinates.top + field.clientTop)
+    // Флаг №4
+    console.log(windowCoordinates.left + field.clientLeft + field.clientWidth, windowCoordinates.top + field.clientTop + field.clientHeight)
+
   </script>
 
 </body>
