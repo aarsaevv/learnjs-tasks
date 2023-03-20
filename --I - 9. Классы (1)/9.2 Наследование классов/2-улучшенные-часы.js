@@ -29,10 +29,15 @@ class Clock {
 
   start() {
     this.render();
-    this.timer = setInterval(() => this.render(), 1000);
+    this.timer = setInterval(() => this.render(), this.ticksInterval);
   }
 }
 
 class ExtendedClock extends Clock {
-  
+  constructor(options) {
+    super(options)
+    let ticksInterval = 1000
+    options = ticksInterval
+    this.ticksInterval = ticksInterval
+  }
 }
